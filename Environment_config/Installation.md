@@ -55,10 +55,11 @@
    1. -i: -i, --interactive Keep STDIN open even if not attached
    2. -t: Allocate a pseudo-TTY, it will show the linux console
    3. -p: Publish a container's port(s) to the host
-   4. name:tag indicator for the container
+   4. -v: mount the local folder to the container's directory. For example, Here I mount the localpath/VQE to the container_root/VQE. Then using !ls in the jupyter notebook, we can see the VQE folder in the root path.
+   5. name:tag indicator for the container
 
    ```console
-    docker run -it -p 8888:8888 openfermion:first
+    docker run -it --rm -v absolute_path/VQE:/VQE -p 8888:8888 openfermion:first
     ```
 
 ### Run the jupyter notebook in the container
