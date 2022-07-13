@@ -41,6 +41,20 @@
     docker build --pull --rm -f "openfermion_docker" -t openfermion:first .
     ```
 
+    - If error happened:
+
+        ```console
+            Sending build context to Docker daemon   7.68kB
+            Step 1/28 : FROM ubuntu
+            latest: Pulling from library/ubuntu
+            no matching manifest for windows/amd64 10.0.22000 in the manifest list entries
+        ```
+
+        - Switch the container to Linux
+            1. Click Docker Icon in System Tray In Context Menu
+            2. Click "Switch to Window/Linux Container"
+            3. When it change to "Switch to Window Container...", it is OK
+
 4. After building, which may take 30 minutes in the first time,  you can use the image in the docker container app.
 5. To check the image in the docker container, using the command:
 
