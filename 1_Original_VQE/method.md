@@ -6,7 +6,7 @@
 
 1. This paper seems to be the first time introduce the VQE method by using a photonic quantum processor.
 2. It used a device ansatz without any chemical domain knowledge. The device ansatz benefits it from the easy access of the state preparation by tuning several parameters of photonic thermal phase shifters.
-3. It used a Nelder-Mead algorithm to optimize the objective function, i.e., the ground energy of the Hamiltonian.
+3. It used a Nelder-Mead algorithm to optimize the objective function, i.e., the ground energy of the Hamiltonian. But here I find it is slowly, so I use the COBYLA method.
 
 ## Algorithm
 
