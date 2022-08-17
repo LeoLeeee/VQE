@@ -75,6 +75,7 @@
    ```console
     docker run -it --rm -v absolute_path/VQE:/VQE -p 8888:8888 openfermion:first
     ```
+    ***Note***: the absolute_path should use "/" not "\\" to separate the path.
 
 ### Run the jupyter notebook in the container
 
